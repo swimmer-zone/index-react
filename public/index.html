@@ -5,39 +5,52 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>IndeX</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Swimmer [webmaster@swimmer.zone]" />
+    <meta name="copyright" content="2009 http://swimmer.zone/projects/index/" />
+    <meta name="description" content="Home of IndeX reggae band from Venlo" />
+    <meta name="distribution" content="Global" />
+
+    <meta name="language" content="EN" />
+    <meta name="owner" content="http://swimmer.zone/" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="index, reggae, music, venlo, ska, punk, dub, funk" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    
+    <script type="text/javascript">
+      function cycleImages()
+      {
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        var active = $('#cycler .active');
+        var next = (active.next().length > 0) ? active.next() : $('#cycler div:first-of-type');
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        //  Move the next image up the pile
+        next.css('z-index', 2);
+
+        //  Fade out the top image
+        active.fadeOut(1500, function() {
+
+          //  Reset the z-index and unhide the image
+          active.css('z-index', 1).show().removeClass('active');
+
+          //  Make the next image the top one
+            next.css('z-index',3).addClass('active');
+        });
+      }
+
+      $(document).ready(function() {
+
+        setInterval('cycleImages()', 5000);
+      });
+    </script>
   </body>
 </html>
