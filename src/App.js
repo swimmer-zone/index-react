@@ -1,4 +1,5 @@
 import React from 'react';
+import Music from './Layout/Music';
 import './App.scss';
 
 const App = () => {
@@ -38,19 +39,7 @@ const App = () => {
 				</p>
 
 				<h2>Listen to our demo's</h2>
-				<ul class="songs" id="music">
-					{Object.entries(tracks).map(([key, value]) => {
-						return(
-						  	<li>
-						  		<a href={'/audio/' + key + '.mp3'} key={key}>
-
-									<span>IndeX - {value}</span>
-									<span>&nbsp;</span>
-								</a>
-						  	</li>
-						)
-					})}
-				</ul>
+				<Music project="index" />
 
 				<h2 id="agenda">See us live</h2>
 				<p>Nothing planned at this moment.</p>

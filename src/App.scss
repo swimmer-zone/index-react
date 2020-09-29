@@ -258,8 +258,17 @@ h2 {
   }
 }
 .songs {
-  a {
-    text-decoration:none;
+  button {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-family: $font;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: $green_light;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
   }
   span {
     display:inline-block;
