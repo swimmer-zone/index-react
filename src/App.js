@@ -3,14 +3,6 @@ import Music from './Layout/Music';
 import './App.scss';
 
 const App = () => {
-	const tracks = {
-		'intro':      'Intro',
-		'babylon':    'Babylon',
-		'my_brother': 'My Brother',
-		'secret':     'Secret',
-		'all_one':    'All One'
-	};
-
     return (
       	<>
 			<div id="beam"></div>
