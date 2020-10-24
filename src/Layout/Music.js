@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Async from 'react-async';
+import { PacmanLoader } from 'react-spinners';
 
 const Music = (props) => {
     const player = useRef(null);
@@ -22,9 +23,9 @@ const Music = (props) => {
 	return (
 		<ul class="songs" id="music">
 			<Async promiseFn={loadTracks}>
-				<Async.Loading>Loading...</Async.Loading>
+				<Async.Loading><PacmanLoader color={"#ffff00"} /></Async.Loading>
 				<Async.Fulfilled>
-					{data => {console.log()
+					{data => {
 						return (
 							Object.keys(data[props.project].tracks).map(track => {
 								return(

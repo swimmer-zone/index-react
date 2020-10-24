@@ -234,13 +234,13 @@ h2 {
 }
 #cycler {
     position: fixed;
-    bottom: -40px;
-    right: 0;
+    bottom: -164px;
+    right: -186px;
     z-index: 1;
     text-align: right;
     vertical-align: bottom;
-    width: 373px;
-    height: 250px;
+    width: 746px;
+    height: 500px;
 
     div {
         position: absolute;
@@ -251,6 +251,7 @@ h2 {
         width: 373px;
         height: 250px;
         background-color: $black;
+        transform: scale(2);
 
         &.active {
             z-index: 3;
