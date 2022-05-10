@@ -1,0 +1,23 @@
+@import '../_variables.scss';
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 254px;
+    z-index: 98;
+    background-image: url('header.png');
+}
+
+#subheader {
+    min-height: 116px;
+    width: 800px;
+    background-image: url('header-sub.png');
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 254px;
+    left: 220px;
+    z-index: 99;
+    padding-left: 240px;
+}

@@ -1,0 +1,28 @@
+@import '../_variables.scss';
+
+#cycler {
+    position: fixed;
+    bottom: -164px;
+    right: -186px;
+    z-index: 98;
+    text-align: right;
+    vertical-align: bottom;
+    width: 746px;
+    height: 500px;
+
+    div {
+        position: absolute;
+        z-index: 98;
+        text-align: right;
+        vertical-align: bottom;
+        background-image: url('cycler.png');
+        width: 373px;
+        height: 250px;
+        background-color: $black;
+        transform: scale(2);
+
+        &.active {
+            z-index: 99;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import '../_variables.scss';
+
+.songs {
+    button {
+        background: none;
+        border: 0;
+        outline: 0;
+        font-family: $font;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: $green_light;
+        text-align: left;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    span {
+        display: inline-block;
+        height: 32px;
+
+        &:nth-child(1) {
+            width: 460px;
+            padding: 8px;
+        }
+        &:nth-child(2) {
+            width: 32px;
+            background-image: url('music-play.png');
+            background-position: 0 0;
+            cursor: pointer;
+        }
+        &:nth-child(2):hover {
+            background-position: 0 -50px;
+        }
+    }
+}

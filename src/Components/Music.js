@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Async from 'react-async';
 import tracks from '../json/tracks.json';
+import '../assets/components/music.scss';
 
-const Music = (props) => {
+const Music = () => {
     const player = useRef(null);
     const [ state, setState ] = useState({
         currentTrack: null,
@@ -16,7 +17,8 @@ const Music = (props) => {
         }
     }, [state.currentTrack]);
 
-	return (
+	return (<section>
+		<h2>Listen to our demo's</h2>
 		<ul class="songs" id="music">
             {Object.keys(tracks).map(key => {
 				let track = tracks[key];
@@ -34,7 +36,7 @@ const Music = (props) => {
 						
 			<audio ref={player} />
 		</ul>
-	);
+	</section>);
 }
 
 export default Music;

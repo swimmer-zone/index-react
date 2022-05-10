@@ -1,0 +1,102 @@
+@import '_variables.scss';
+
+body {
+    background-color: $black;
+    font-family: $font;
+}
+
+section {
+    width: 800px;
+    margin-top: 300px;
+    margin-left: 220px;
+    z-index: 100;
+    position: relative;
+    padding-left: 240px;
+
+    * {
+        z-index: 100;
+    }
+}
+p,
+div,
+td {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+p,
+div,
+table {
+    width: 100%;
+    color: $green_light;
+    margin-bottom: 40px;
+}
+tr {
+    color: $green_light;
+    margin: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: $green_dark;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: $green_dark;
+
+    &:hover {
+        border-bottom-color: $green_light;
+        border-top-color: $green_light;
+        background-color: $green_dark;
+        color: $yellow;
+    }
+}
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    border: 0;
+}
+h1, h2 {
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    padding: 20px 0;
+    margin: 0 20px 40px 0;
+    color: $yellow;
+    text-shadow: 4px 4px 8px $black;
+}
+h2 {
+    font-size: 36px;
+    margin-top: 80px;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: $black
+}
+::-webkit-scrollbar-thumb {
+    background: $black;
+    border: 2px solid $green_light
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    border: 2px solid $green_light
+}
+::-webkit-scrollbar-button {
+    background: $green_light;
+    border: 2px solid $green_light
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner {
+    background: $black
+}

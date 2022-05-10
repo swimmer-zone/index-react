@@ -1,0 +1,22 @@
+@import '../_variables.scss';
+
+.agenda {
+    span {
+        height: 32px;
+        display: inline-block;
+        padding: 8px;
+
+        &:nth-child(1) {
+            width: 120px;
+        }
+        &:nth-child(2) {
+            width: 200px;
+        }
+        &:nth-child(3) {
+            width: 100px;
+        }
+        &:nth-child(4) {
+            width: 50px;
+        }
+    }
+}

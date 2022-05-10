@@ -1,0 +1,104 @@
+@import '../_variables.scss';
+
+#beam {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-image: url('menu-bg.png');
+    background-repeat: repeat-y;
+    width: 220px;
+}
+
+#menu {
+    list-style-type: none;
+    position: fixed;
+    top: 254px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+
+    li {
+        background: url('menu.png') no-repeat top left;
+        width: 220px;
+        height: 90px;
+
+        &:nth-of-type(1) {
+            display: block;
+            width: 100%;
+            height: 116px;
+            border: 0;
+            outline: 0;
+            margin: 0;
+            background-position: 0 0;
+
+            &:hover {
+                background-position: 0 -150px;
+            }
+        }
+        &:nth-of-type(2) {
+            display: block;
+            width: 100%;
+            background-position: 0 -300px;
+            border: 0;
+            outline: 0;
+            margin: 0;
+            height: 90px;
+
+            &:hover {
+                background-position: 0 -424px;
+            }
+        }
+        &:nth-of-type(3) {
+            display: block;
+            width: 100%;
+            background-position: 0 -548px;
+            border: 0;
+            outline: 0;
+            margin: 0;
+            height: 90px;
+
+            &:hover {
+                background-position: 0 -672px;
+            }
+        }
+        &:nth-of-type(4) {
+            display: block;
+            width: 100%;
+            background-position: 0 -796px;
+            border: 0;
+            outline: 0;
+            margin: 0;
+            height: 90px;
+
+            &:hover {
+                background-position: 0 -920px;
+            }
+        }
+        &:nth-of-type(5) {
+            display: block;
+            width: 100%;
+            height: 160px;
+            background-position: 0 -1044px;
+            border: 0;
+            outline: 0;
+            margin: 0;
+        }
+        &:nth-of-type(5):hover {
+            background-position: 0 -1238px;
+        }
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 90px;
+        border: 0;
+        outline: 0;
+        margin: 0;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
